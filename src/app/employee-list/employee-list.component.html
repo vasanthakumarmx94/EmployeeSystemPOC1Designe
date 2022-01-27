@@ -1,0 +1,45 @@
+<section class="mytableContainer">
+<h2>Employee List</h2>
+<div class="form-group">
+    <input type="text" class="form-control mb-4" placeholder="Search" [(ngModel)]="searchContent" id="listSearch">
+</div>
+<table class="table table-striped" border="2">
+    <thead class="tablehead">
+        <tr>
+            <th (click)="togleSort('id')">Emp Id</th>
+            <th (click)="togleSort('firstname')">FirstName</th>
+            <th>SurName</th>
+            <th (click)="togleSort('phoneNo')">PhoneNumber</th>
+            <th (click)="togleSort('dob')">DOB</th>
+            <th (click)="togleSort('joiningdate')">Joining Date</th>
+            <th (click)="togleSort('age')">Age</th>
+            <th (click)="togleSort('userName')">UserName</th>
+            <th (click)="togleSort('address')">Address</th>
+            <th (click)="togleSort('pincode')">PinCode</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody class="tabletd">
+        <tr *ngFor="let employee of employees | searchFilter: searchContent | orderBy: orderproperty:val">
+            <td>{{employee.id}}</td>
+            <td>{{employee.firstname}}</td>
+            <td>{{employee.surname}}</td>
+            <td>{{employee.phoneNo}}</td>
+            <td>{{employee.dob}}</td>
+            <td>{{employee.joiningdate}}</td>
+            <td>{{employee.age}}</td>
+            <td>{{employee.userName}}</td>
+            <td>{{employee.address}}</td>
+            <td>{{employee.pincode}}</td>
+            <td>
+                <button (click)="updateEmployee(employee.id)" class="btn btn-info">Update</button>&nbsp;
+                <button (click)="deleteEmployee(employee.id)" class="btn btn-danger">Delete</button>&nbsp;
+                <button (click)="viewEmployee(employee.id)" class="btn btn-secondary">View</button>
+            </td>
+
+        </tr>
+    </tbody>
+
+</table>
+
+</section>

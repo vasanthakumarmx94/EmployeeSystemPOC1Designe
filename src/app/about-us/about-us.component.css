@@ -1,0 +1,17 @@
+
+.myblock{
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    background-color: navajowhite;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+.myAbout{
+    display: flex;
+    margin-left: 150px;
+    background-color: rgb(211, 195, 211);
+    width: 900px;
+    border: 2px solid green;
+}

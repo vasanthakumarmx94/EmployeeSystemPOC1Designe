@@ -1,0 +1,9 @@
+.addEmpForm{
+    background-color: rgb(142, 179, 144);
+    border-radius: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.addEmpForm label{
+    font-weight: 600;
+}
