@@ -18,8 +18,15 @@
             <a routerLink='profile' routerLinkActive='active' class="nav-link">Profile</a>
         </li>
     </ul>
+    <mat-button-toggle-group name="favoriteColor" aria-label="Favorite Color">
+        <mat-button-toggle value="red">Red</mat-button-toggle>
+        <mat-button-toggle value="green">Green</mat-button-toggle>
+        <mat-button-toggle value="blue">Blue</mat-button-toggle>
+      </mat-button-toggle-group>
 </nav>
+
 </header>
+
 
 <section class="myBody">
 <div class="container combody">
@@ -28,6 +35,7 @@
     </router-outlet>
 </div>
 </section>
+
 <footer class="footer">
     <div class="container">
         <span>All Rights Reserved 2022 @vasanthakumar</span>

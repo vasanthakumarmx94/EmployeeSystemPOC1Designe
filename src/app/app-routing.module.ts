@@ -8,6 +8,7 @@ import { HomePortalComponent } from './home-portal/home-portal.component';
 import { ProfileComponent } from './profile/profile.component';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 
+
 const routes: Routes = [
   {path:'employees',component:EmployeeListComponent},
   {path:'create-employee',component:CreateEmployeeComponent},
